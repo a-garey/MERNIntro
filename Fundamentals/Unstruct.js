@@ -52,6 +52,12 @@ console.log(secondKey[0]);
 console.log(willThisWork);
 //Undefined
 
+name = "bob"
+var sayHello = function(name) {
+    console.log('Hello ' + name);
+    };
+
+
 
 
 
