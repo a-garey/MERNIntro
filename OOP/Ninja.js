@@ -20,9 +20,32 @@ class Ninja {
     }
 }
 
+class Sensei extends Ninja {
+    constructor(name) {
+        super(name);
+        this.health = 200;
+        this.speed = 10;
+        this.strength = 10;
+        this.wisdom = 10;
+    }
+
+    speakWisdom(){
+        super.drinkSake();
+        console.log(`The heart that gives, gathers`)
+    }
+
+    showStats() {
+        console.log(mySensei);
+    }
+
+}
+
 let  myNinja = new Ninja("Hyabusa", 5);
+let mySensei = new Sensei("Master Splinter");
 
 
 myNinja.sayName();
 myNinja.drinkSake();
 myNinja.showStats();
+mySensei.showStats();
+mySensei.speakWisdom();
