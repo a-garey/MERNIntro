@@ -15,7 +15,7 @@ class Ninja {
     }
 
     drinkSake(){
-        this.health + 5;
+        this.health += 5;
         console.log(`${this.health}`);
     }
 }
