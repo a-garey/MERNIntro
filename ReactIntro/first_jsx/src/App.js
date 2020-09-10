@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import myComponent from './components/newComponent';
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
         <h4>Feed the dogs</h4>
       </li>
     </ul>
+
+    <div>
+      < newComponent />
+    </div>
     </>
   );
 }
