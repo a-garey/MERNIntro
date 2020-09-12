@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Input = props => {
     const { list, setList } = props;
@@ -10,7 +10,6 @@ const Input = props => {
     const onClick = e => {
         setList([...list, task]);
         e.target.value = "";
-        task = "";
     };
 
     const onChange = e => {
